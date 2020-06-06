@@ -6,11 +6,10 @@
 /out-tsc
 
 # dependencies
-**/node_modules/
+/node_modules
 
 # IDEs and editors
-.idea/
-**/.idea/
+/.idea
 .project
 .classpath
 .c9/
@@ -20,7 +19,6 @@
 
 # IDE - VSCode
 .vscode/*
-**/.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -39,5 +37,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-**/.DS_Store
-**/Thumbs.db
