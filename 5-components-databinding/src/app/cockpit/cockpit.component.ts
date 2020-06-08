@@ -18,8 +18,16 @@ export class CockpitComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  /* Using ngModel
   onAddServer() {
     this.serverCreated.emit({name: this.newServerName, content: this.newServerContent});
+  }
+  */
+
+  // using local reference from template
+  onAddServer(serverName: HTMLInputElement) {
+    console.log(serverName);
+    this.serverCreated.emit({name: serverName.value, content: this.newServerContent});
   }
 
   onAddBlueprint() {
